@@ -12,7 +12,7 @@ const sieve: SieveType = {
 
 		// flip `true` in primes to `false` for each non-prime
 		// Remember to start with `2` and go up to a number and include it
-		for (let i = 2; i <= num; i++) {
+		for (let i = 2; i <= Math.sqrt(num); i++) {
 			// we start with a square of `i`, because as you remember we leave the first element alone
 			for (let j = i * i; j <= num; j++) {
 				// now we have to check if something has already been flipped or not AND if its not a prime, ie its divisible by something
